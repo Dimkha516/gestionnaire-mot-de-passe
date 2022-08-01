@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Générateur de Mot de Pass</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <h1 id="password-display">Générateur de mot de passe</h1>
+
+      <div class="password-level">
+        <input
+          id="password-level"
+          type="range"
+          value="6"
+          min="4"
+          max="8"
+          oninput="document.getElementById('password-output').value=this.value"
+          )
+        />
+        <input id="password-output" type="text" readonly value="6" />
+      </div>
+
+      <div class="password-check">
+        <div class="miniscule">
+          <input type="checkbox" id="min" />
+          <label for="min">a-z</label>
+        </div>
+
+        <div class="majiscule">
+          <input type="checkbox" id="maj" />
+          <label for="maj">A-Z</label>
+        </div>
+
+        <div class="number">
+          <input type="checkbox" id="numb" />
+          <label for="numb">1-9</label>
+        </div>
+
+        <div class="caractere">
+          <input type="checkbox" id="caract" />
+          <label for="caract">!-?</label>
+        </div>
+      </div>
+
+      <div class="submit">
+        <button id="generate-button">=> Générer mot de passe</button>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

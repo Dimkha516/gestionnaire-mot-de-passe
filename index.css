@@ -1,0 +1,64 @@
+body {
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(215, 215, 250);
+}
+
+.app {
+  background-color: rgb(12, 12, 53);
+  margin: 0 auto;
+  width: 60%;
+  padding: 15px 0;
+  margin-top: 25px;
+  color: aliceblue;
+  font-size: 1.2rem;
+  border: solid 25px rgb(116, 170, 250);
+  border-radius: 20px;
+}
+
+.password-level {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.password-level input[type="text"] {
+  background-color: rgb(12, 12, 53);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+
+.password-check {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+  padding: 10px 0;
+}
+
+.password-check input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.password-check label {
+  background-color: rgb(12, 12, 12);
+  font-size: 2rem;
+  margin: 17px;
+  padding: 8px;
+  border-radius: 11px;
+  cursor: pointer;
+}
+
+.submit button {
+  background-color: aquamarine;
+  font-size: 1.5rem;
+  padding: 8px 5px;
+  border-radius: 11px;
+  cursor: pointer;
+}
+
+.submit button:hover {
+  background-color: aliceblue;
+  transition: 0.5s;
+}
